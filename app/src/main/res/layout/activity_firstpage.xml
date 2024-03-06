@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstpageActivity"
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Optimalkan Energi, Wujudkan Prestasi:
+Temukan Kebugaran Anda di Sini!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:id="@+id/txt_1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:width="263dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/lbtn_1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbtn_1"
+        android:width="263dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/lbtn_2"
+        />
+
+
+
+</RelativeLayout>
