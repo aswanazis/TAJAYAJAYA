@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,68 +7,129 @@
     tools:context=".FirstpageActivity"
     android:background="@drawable/gradientbackground">
 
-    <ImageView
-        android:id="@+id/img_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="105dp"
-        android:src="@drawable/logo" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img_1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="Optimalkan Energi, Wujudkan Prestasi:
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Optimalkan Energi, Wujudkan Prestasi:
 Temukan Kebugaran Anda di Sini!"
-        android:fontFamily="@font/poppinsbold"
-        android:textColor="@color/white"
-        android:id="@+id/txt_1"/>
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo"
+                tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lbtn_2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="ATAU TERHUBUNG DENGAN"
-        android:fontFamily="@font/poppinsextra"
-        android:textColor="@color/white"
-        android:id="@+id/txt_2"/>
+            <TextView
+                android:id="@+id/txt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnreg1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppinsextra"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="ATAU TERHUBUNG DENGAN"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/btnreg1"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="@+id/btnreg1"
+                app:layout_constraintTop_toBottomOf="@+id/btnreg1"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_1"
-        android:width="263dp"
-        android:text="Login"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_shape"
-        android:textColor="@color/black"
-        android:fontFamily="@font/poppinsbold"
-        android:id="@+id/lbtn_1"
-        />
+            <Button
+                android:id="@+id/buttonlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:width="263dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Login"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_1"
+                tools:ignore="MissingDocumentation,MissingConstraints" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lbtn_1"
-        android:width="263dp"
-        android:text="Register"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_shape"
-        android:textColor="@color/black"
-        android:fontFamily="@font/poppinsbold"
-        android:id="@+id/lbtn_2"
-        />
+            <Button
+                android:id="@+id/btnreg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonlogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:width="263dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Register"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/googlelogo"
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                android:layout_below="@id/txt_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_2"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2"
+                app:srcCompat="@drawable/googlelogo"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/facebooklogo"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/txt_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/txt_2"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2"
+                app:srcCompat="@drawable/facebooklogo" />
 
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
