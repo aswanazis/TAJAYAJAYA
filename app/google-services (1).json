@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853565851739",
+    "project_id": "tajayajaya-6c054",
+    "storage_bucket": "tajayajaya-6c054.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853565851739:android:7120b6f48fcc6820c1577e",
+        "android_client_info": {
+          "package_name": "com.example.tajayajaya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJKkzWjF5hHtt8LPqofZJFi5pC_tKL5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
